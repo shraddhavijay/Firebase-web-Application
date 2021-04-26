@@ -14,9 +14,10 @@ function fetchData(){
         }
       }).catch((error) => {
         console.error(error);
-      });
-      
+      });      
 }
+
+
 
 function addData(){
     // This function is used add data items into firebase databaseReference
@@ -28,9 +29,10 @@ function addData(){
         databaseReference.child('groups'/groupName_val).set({
           title: title_val,
           description: description_val,
-        });
-       
+        });       
 }
+
+
 
 function updateData(){
 // This function is used update data items into firebase databaseReference
@@ -48,6 +50,8 @@ function updateData(){
   updates['messages/group1/msg2/message/' ] = msg2;
   databaseReference.update(updates);
 }
+
+
 
 function removeData(){
 // This function is used to update data items into firebase databaseReference
