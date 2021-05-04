@@ -1,66 +1,72 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+		crossorigin="anonymous"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+	<title>Firebase Functions</title>
 </head>
+
 <body>
-    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
 
-    <div class="container-md">
+	<div class="container-md">
 
-        <div class="jumbotron text-center">
-            <h1>Demo Firebase application</h1>
-          </div>
-           
-    <form>
-        <div class="mb-3">
-            <label for="departmentInputField" class="form-label">Department name</label>
-            <input type="Text" class="form-control" id="departmentInputField" required>
-          </div>
-        
-        <div class="col-auto">
-            <button type="submit" onClick='insertDepartment()' class="btn btn-primary mb-3">Add Department</button>
-        </div>
-        
-    </form>
-    
-    <form>
-        <div class="mb-3">
-            <label for="s_name" class="form-label">Name</label>
-            <input type="Text" class="form-control" id="s_name" required>
-          </div>
-          <div class="mb-3">
-            <label for="s_email" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="s_email" placeholder="name@example.com" required>
-          </div>
-        <div class="mb-3">
-            <label for="s_mobile" class="form-label">Mobile no</label>
-            <input type="Text" class="form-control" id="s_mobile" placeholder="+91" required>
-          </div>
+		<div class="jumbotron text-center">
+			<h1>Demo Firebase application</h1>
+		</div>
+		<form>
+			<div class="mb-3">
+				<label for="departmentInputField" class="form-label">Department name</label>
+				<input type="Text" class="form-control" id="departmentInputField" required>
+			</div>
 
-          <div class="mb-3">
-              
-            <label for="departmentDropdown" class="form-label">Select Department</label>
+			<div class="col-auto">
+				<button type="submit" onClick='insertDepartment()' class="btn btn-primary mb-3">Add Department</button>
+			</div>
 
-            
-            <div class="input-group mb-3">
-                <label class="input-group-text" for="inputGroupSelect01">Options</label>
-                          <select class="form-select" id="departmentDropdown">
-                            </select>
-            </div>
-        </div>       
-        <div class="col-auto">
-            <button type="submit" onClick='insertStudent()' class="btn btn-primary mb-3">Add student</button>
-        </div>
-        
-    </form>
+		</form>
 
-    <script src="functions.js"></script>
-</div>
+		<form>
+			<div class="mb-3">
+				<label for="s_name" class="form-label">Name</label>
+				<input type="Text" class="form-control" id="s_name" required>
+			</div>
+			<div class="mb-3">
+				<label for="s_email" class="form-label">Email address</label>
+				<input type="email" class="form-control" id="s_email" placeholder="name@example.com" required>
+			</div>
+			<div class="mb-3">
+				<label for="s_mobile" class="form-label">Mobile no</label>
+				<input type="Text" class="form-control" id="s_mobile" placeholder="+91" required>
+			</div>
+
+			<div class="mb-3">
+
+				<label for="departmentDropdown" class="form-label">Select Department</label>
+
+
+				<div class="input-group mb-3">
+					<label class="input-group-text" for="inputGroupSelect01">Options</label>
+					<select class="form-select" id="departmentDropdown">
+					</select>
+				</div>
+			</div>
+			<div class="col-auto">
+				<button type="submit" onClick='insertStudent()' class="btn btn-primary mb-3">Add student</button>
+			</div>
+
+		</form>
+
+		<script src="../config.js"></script>
+		<script src="functions.js"></script>
+	</div>
 
 </body>
 
