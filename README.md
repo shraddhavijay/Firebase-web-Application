@@ -1,6 +1,6 @@
 # Firebase-web-Application Session PPT
 
-`https://docs.google.com/presentation/d/1kKHeLlanAfiw1mmTtZGV38tX_zlG4WT5ZwKxFygOrD4/edit?usp=sharing`
+https://docs.google.com/presentation/d/1kKHeLlanAfiw1mmTtZGV38tX_zlG4WT5ZwKxFygOrD4/edit?usp=sharing
 
 # Firebase-web-Application
 
